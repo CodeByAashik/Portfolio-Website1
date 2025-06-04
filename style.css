@@ -207,12 +207,13 @@ header ul a{
 
 .hero-vid-box{
     position:absolute;
-    right:3%;
+    right:5%;
 }
 
-.hero-vid-box video{
-    height:900px;
-    mix-blend-mode: difference;
+.hero-vid-box img{
+    border-radius: 50%;
+    height:400px;
+    width: 400px;
 }
 
 
@@ -832,7 +833,7 @@ footer h1{
 
 .menu-icon{
     font-size: 35px;
-    margin-right:-5px;
+    /* margin-right:0px; */
     cursor: pointer;
     display: none;
 }
@@ -1192,7 +1193,15 @@ footer h1{
         height: auto;
         background-color: rgba(255, 255, 255, 0);
     }
+.left{
+    position: relative;
+    left:-40px;
+}
+
     header {
+        position: relative;
+        width: 100vw;
+        justify-content: space-around;
         position: fixed;
         height: 50px;
     }
@@ -1240,8 +1249,17 @@ footer h1{
 
     .hero-vid-box{
         height:200px;
-        top:0%;
-        right:3%;
+        top:10%;
+        right:19%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .hero-vid-box img{
+        height:250px;
+        width:250px;
+        box-shadow: 0 0 10px lightgray , 0 0 10px navy;
     }
 
     .scroll-down{
