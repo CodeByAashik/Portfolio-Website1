@@ -174,7 +174,7 @@ header ul a{
 }
 
 .hero-info button{
-    color:white;
+    color: #727fde;
     padding:15px 25px;
     border-radius:10px;
     border: 1px solid #727fdeb4;
@@ -182,6 +182,14 @@ header ul a{
     box-shadow: 0 0 5px #727fde86;
     cursor:pointer;
     transition:0.3s;
+}
+
+.hero-info button a{
+    text-decoration: none;
+    color: #727fde;
+    font-weight: 700;
+    font-size: 15px;
+
 }
 
 
