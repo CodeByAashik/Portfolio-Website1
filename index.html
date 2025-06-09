@@ -3,12 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aashik Thakur - Back-End Developer Portfolio</title>
+    <title>Aashik Thakur</title>
     <link rel="shortcut icon" href="icon.png" type="image/x-icon">
-    <meta name="robots" content="index, follow">
-    <meta name="author" content="Aashik Thakur">
-    <meta property="og:title" content="Aashik Thakur | Back-End Developer Portfolio">
     <meta name="description" content="Namaste! I'm Aashik Thakur, a back-end developer from Nepal. I build APIs and backend systems using Spring Boot and Java.">
+    <meta name="author" content="Aashik Thakur">
+    <meta name="robots" content="index, follow">
+<link rel="canonical" href="https://www.aashikthakur.com.np/">
+    <meta property="og:title" content="Aashik Thakur | Back-End Developer Portfolio">
     <meta property="og:image" content="https://aashikthakur.com.np/images/hero-profile.jpg">
 
     <link rel="stylesheet" href="style.css">
@@ -82,8 +83,8 @@
         </section>
 
 
-        <section class="info-section">
-            <h1 class="section-title font-nura autoblur" id="about">About Me <i class="fa-solid fa-user-tie" style="color:goldenrod"></i></h1>
+        <section class="info-section"  id="about">
+            <h1 class="section-title font-nura autoblur">About Me <i class="fa-solid fa-user-tie" style="color:goldenrod"></i></h1>
             <div class="info-cards">
                 <div class="card card1 autoblur">
                     <h1 class="font-nura">Hi there, I'm Aashik</h1>
@@ -101,7 +102,10 @@
                     <h1 class="font-nura">Flexible Communication</h1>
                     <p>Based in Nepal and open to remote work worldwide. I adapt to different time zones and collaborate effectively across teams and borders.</p>
                     <video autoplay loop muted plays-inline src="video/glob.mp4" type="video/mp4"></video>
-                    <button><i class="fa-solid fa-up-right-from-square"></i> Contact Me</button>
+                    <a href="#first">
+
+                        <button><i class="fa-solid fa-up-right-from-square"></i> Contact Me</button>
+                    </a>
                 </div>
 
                 <div class="card card4 left-scroll">
@@ -113,8 +117,8 @@
         </section>
 
 
-        <section class="my-projects" id="projects">
-            <h1 class="section-title font-nura autoblur">My Projects <i class="fa-solid fa-laptop-code" style="color:goldenrod"></i></h1>
+        <section class="my-projects" >
+            <h1 class="section-title font-nura autoblur" id="projects">My Projects <i class="fa-solid fa-laptop-code" style="color:goldenrod"></i></h1>
 
 
             <!-- project1 -->
@@ -164,8 +168,8 @@
 
 
 
-        <section class="skills-section" id="skills">
-            <h1 class="section-title font-nura autoblur" >My Skills <i class="fa-solid fa-rocket" style="color:goldenrod"></i></h1>
+        <section class="skills-section">
+            <h1 class="section-title font-nura autoblur"  id="skills" >My Skills <i class="fa-solid fa-rocket" style="color:goldenrod"></i></h1>
             <div class="skills-box">
                 <img class="skills-image autoblur" src="images/digital brain (2).png" alt="digital brain png">
             </div>
@@ -289,6 +293,19 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
 
     <script src="https://unpkg.com/@studio-freight/lenis@latest/bundled/lenis.min.js"></script>
+    <script>
+  document.getElementById("scrollBtn").addEventListener("click", function () {
+    // Example condition: only scroll if the window width is above 600px
+    if (window.innerWidth > 600) {
+      document.getElementById("contact").scrollIntoView({
+        behavior: "smooth"
+      });
+    } else {
+      alert("Scroll is disabled on small screens.");
+    }
+  });
+</script>
+
 
 </body>
 </html>
