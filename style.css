@@ -1243,44 +1243,55 @@ footer h1{
     
     .hero{
         flex-direction: column;
-        top:0;
+        top:101px;
         bottom: 0;
         left: 0;
         right:0;
-        
+        height: 100vh;
+        justify-content: space-around;
     }
-    .hero-info{
-        bottom: 9%;
-        /* margin-bottom:2px; */
+    
+    .scroll-down{
+        bottom:25%;
     }
 
     
 
     .hero-vid-box{
-        height:200px;
-        top:10%;
-        right:19%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    .hero-vid-box img{
-        height:250px;
-        width:250px;
+            height:200px;
+            width: 100vw;
+            top: 60px;
+            margin-bottom: 10vh;
+            display: inline-block;
+        }
+        
+        .hero-vid-box img{
+            position: relative;
+            height:250px;
+            width:250px;
+            /* top:20px; */
+            left: 50%;
+            transform: translate(-50%,-50%);
         box-shadow: 0 0 10px lightgray , 0 0 10px navy;
+        align-self: flex-start;
     }
 
-    .scroll-down{
-        bottom: 8%;
+    .section-title{
+        font-size: 1.7rem;
+        text-align: left;
     }
 
     
 
-    .info-section , .my-projects{
-        margin-top:-10%;
+    .info-section{
+        margin-top:-160px;
     }
 
+     .my-projects{
+        margin-top: 0px;
+     }
+
+    
     .card h1{
         /* position:absolute; */
         font-family: 'Courier New', Courier, monospace;
@@ -1392,7 +1403,7 @@ footer h1{
     
 
     .skills-section{
-        margin-top: 500px;
+        margin-top: 285px;
     }
 
     .skills-image{
@@ -1438,7 +1449,9 @@ footer h1{
     }
 
     .slider{
-        margin-top:-110px;
+       right: 20px;
+        margin-top: -129px;
+        width: 91%;
     }
 
     .list{
@@ -1449,13 +1462,18 @@ footer h1{
     .contact-section{
         flex-direction: column;
         padding-top: 0px;
-        margin-bottom: 290px;
+        margin-bottom: 194px;
+        margin-top: -126px;
+        width: 84%;
     }
 
-    .contact-section h1{
-        /* margin-left:-50px; */
-        overflow-x: hidden ;
+    #first{
+        font-size: 1.7rem;
+        left: 20%;
+        display: inline-block;
+        top: 166px; 
     }
+    
 
     .social-description{
         margin-left:5%;
@@ -1465,10 +1483,7 @@ footer h1{
     }
 
     .head-social{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left:30px;
+        margin-left:-34px;
         margin-top:400px;
     }
 
@@ -1483,7 +1498,7 @@ footer h1{
     }
 
     .contact-forma{
-        margin-top:-90px;
+        margin-top:-134px;
     }
 
     
