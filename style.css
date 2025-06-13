@@ -903,7 +903,7 @@ footer h1{
 /* open sidebar animation */
 
 .sidebar.open-sidebar{
-    animation: openSidebarAnimation 1.5s forwards;
+    animation: openSidebarAnimation 0.9s forwards;
 }
 
 @keyframes openSidebarAnimation{
@@ -917,7 +917,7 @@ footer h1{
 /* Sidebar close ANimation */
 
 .sidebar.close-sidebar{
-    animation: closeSideBarAnimation 1.5s forwards;
+    animation: closeSideBarAnimation 0.9s forwards;
 }
 
 @keyframes closeSideBarAnimation {
@@ -1287,17 +1287,14 @@ footer h1{
         margin-top:-160px;
     }
 
-     .my-projects{
-        margin-top: 0px;
-     }
-
+    
     
     .card h1{
         /* position:absolute; */
         font-family: 'Courier New', Courier, monospace;
         font-size: 5px;
     }
-
+    
     .card p{
         line-height: 17px;
     }
@@ -1306,22 +1303,22 @@ footer h1{
         grid-column: span 2;
         height:300px;
     }
-
+    
     .card2 img{
         width:100%;
     }
-
-
+    
+    
     .info-cards{
         grid-template-columns: auto;
     }
-
+    
     .card4 h1{
         position: absolute;
         /* bottom:95px; */
         margin-bottom:14px;
     }
-
+    
     .card:nth-child(3){
         grid-column: span 2;
         height: 70vh;
@@ -1334,45 +1331,60 @@ footer h1{
     .container{
         height: 100%;
     }
-
     
-
+    .my-projects{
+       margin-top: -49px;
+       margin-bottom: 78px;
+    }
+    
+    
     .project-info{
         /* overflow-x: hidden; */
         padding-left: 0;
+        align-items: center;
         /* margin-left: -50px; */
+        position: relative;
+        margin-top:-30px;
+        width: 90%;
+        height:100%;
+        margin-left:3.5%;
     }
 
     .project-info h1{
         font-size: 20px;
-        max-width: 200px; 
+        max-width: 300px; 
        text-wrap: wrap;
+       text-align: center;
     }
-
+    
     .project-info p{
-        font-size: 10px;
+        width: 100%;
+        margin-top: -12px;
+        font-size: 12px;
         text-wrap: wrap;
-        max-width: 200px;
+        max-width: 300px;
         min-width: 0;
+        text-align: center;
     }
 
     .project-info button{
         padding: 5px 10px;
         text-align: center;
+        margin-top: -24px;
     }
+
 
     
 
     
 
-    .my-project{
-        margin-bottom: 600px;
-    }
+    
 
     .project-cards{
         flex-direction: column;
         align-items: center;
-        margin-left: 3%;
+        margin-left: 1%;
+        margin-top: -17px;
         /* gap: 30px; */
     }
     
@@ -1382,23 +1394,14 @@ footer h1{
         
     }
 
-    .project-info{
-        position: relative;
-        margin-top:0px;
-        width: 90%;
-        height:100%;
-        margin-left:3.5%;
+    .project-imgbox img{
+        width:311px;
     }
 
-    .project-info h1{
-        /* text-align: center; */
-        /* font-size:10px; */
-        text-wrap: wrap;
-    }
 
-    .project-info p{
-        max-width: 300px;
-    }
+    
+
+    
     
     
 
@@ -1412,7 +1415,7 @@ footer h1{
 
 
     .backend-developer{
-        top: 15%;
+        top: -2%;
         margin-bottom:250px;
     }
 
@@ -1450,7 +1453,7 @@ footer h1{
 
     .slider{
        right: 20px;
-        margin-top: -129px;
+        margin-top: -167px;
         width: 91%;
     }
 
@@ -1473,6 +1476,12 @@ footer h1{
         display: inline-block;
         top: 166px; 
     }
+
+    .cd-head {
+    font-size: 29px;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: -14px;
+}
     
 
     .social-description{
