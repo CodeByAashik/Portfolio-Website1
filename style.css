@@ -163,6 +163,8 @@ header ul a{
 
 .font-nura{
     font-family: 'Nura', sans-serif;
+
+    
 }
 
 
@@ -422,7 +424,7 @@ header ul a{
     mix-blend-mode:screen;
 }
 
-/* cursor foloower */
+/* cursor follower */
 
 .cursor-follower {
     position: fixed;
