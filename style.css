@@ -451,8 +451,8 @@ header ul a{
     position:relative;
     width: 80%;
     height: 100vh;
-    margin-top:150px;
     margin-bottom:770px;
+    margin-top:150px;
 
 
 }
@@ -564,8 +564,8 @@ header ul a{
     display: flex;
     flex-direction: column;
     align-items: center;
-    position: relative;
     margin-top: 150px;
+    position: relative;
     margin-bottom: 150px;
 }
 
