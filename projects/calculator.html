@@ -198,9 +198,16 @@
     }
 
     function calculate(){
-      calculation=eval(calculation);
-      display();
-      localStorage.setItem('recent',calculation);
+      try{
+        calculation=eval(calculation);
+        display();
+        localStorage.setItem('recent',calculation);
+      }catch(error){
+        console.error("Error in calculation : ",error);
+        const display = document.getElementById('display');
+        display.style.color='red';
+        display.value='Laaa! Ke Gareko';
+      }
     }
 
     function backsp(){
