@@ -447,11 +447,12 @@ header ul a{
     flex-direction: column;
     gap: 10%;
     align-items: center;
+    /* justify-content: space-around; */
     position:relative;
     width: 80%;
     height: 100vh;
     margin-top:150px;
-    margin-bottom:700px;
+    margin-bottom:770px;
 
 
 }
@@ -462,7 +463,7 @@ header ul a{
     height:100%;
     align-items: center;
     gap:10%;
-
+    /* margin-top: 5%; */
     justify-content: center;
 }
 
@@ -564,7 +565,7 @@ header ul a{
     flex-direction: column;
     align-items: center;
     position: relative;
-    margin-top: -100px;
+    margin-top: 150px;
     margin-bottom: 150px;
 }
 
