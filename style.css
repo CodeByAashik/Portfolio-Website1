@@ -23,7 +23,7 @@ html{
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap:100px;
+    gap:75px;
     background-color: #001f7c38;
 }
 
@@ -684,14 +684,14 @@ header ul a{
     width: 80%;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    gap: 10%;
+    gap: 2%;
     align-items: center;
     position: relative;
 }
 
 #first{
-    position:absolute;
     display: flex;
     align-items: center;
     top:30px; 
@@ -763,9 +763,11 @@ header ul a{
     margin-top: 10px
 }
 
-.contact-box{
-    margin-top:90px;
+.next-c{
+    display: flex;
+    gap:70px;
 }
+
 
 
 .contact-box input,textarea{
@@ -826,8 +828,8 @@ header ul a{
 
 footer{
     display: flex;
-    position: absolute;
-    /* width: 100%; */
+    /* position: absolute; */
+    width: 100%;
     bottom: 0;
     right: 0;
     left: 0;
@@ -837,6 +839,7 @@ footer{
     backdrop-filter: blur(10px);
     box-shadow: 0 0 15px rgba(255, 255, 255, 0.358);
     z-index: 999;
+    margin-top: -70px;
 }
 
 footer h1{
@@ -1090,9 +1093,6 @@ footer h1{
         height:500px;
     }
 
-    .my-projects{
-        margin-bottom:200px;
-    }
 
     .skills-section{
         margin-top:50px;
@@ -1347,7 +1347,7 @@ footer h1{
         align-items: center;
         /* margin-left: -50px; */
         position: relative;
-        margin-top:-30px;
+        /* margin-top:-30px; */
         width: 90%;
         height:100%;
         margin-left:3.5%;
@@ -1418,7 +1418,6 @@ footer h1{
 
     .backend-developer{
         top: -2%;
-        margin-bottom:250px;
     }
 
     .backend-developer h1{
@@ -1426,10 +1425,6 @@ footer h1{
         margin-top: 100px;
     }
 
-    .frontend-developer{
-        margin-top:100px;
-        top: 50%;
-    }
     
     .frontend-developer h1{
         margin-bottom: 20px;
@@ -1455,7 +1450,6 @@ footer h1{
 
     .slider{
        right: 20px;
-        margin-top: -167px;
         width: 91%;
     }
 
@@ -1465,24 +1459,23 @@ footer h1{
     }
 
     .contact-section{
+        height:auto;
         flex-direction: column;
         padding-top: 0px;
-        margin-bottom: 194px;
-        margin-top: -126px;
         width: 84%;
+        margin-bottom: 30px;
     }
 
     #first{
         font-size: 1.7rem;
         left: 20%;
         display: inline-block;
-        top: 166px; 
+        max-width: 80%;
     }
 
     .cd-head {
     font-size: 29px;
     font-family: 'Times New Roman', Times, serif;
-    margin-bottom: -14px;
 }
     
 
@@ -1495,7 +1488,6 @@ footer h1{
 
     .head-social{
         margin-left:-34px;
-        margin-top:400px;
     }
 
     footer h1{
@@ -1508,8 +1500,12 @@ footer h1{
        justify-content: center;
     }
 
-    .contact-forma{
-        margin-top:-134px;
+
+    .next-c{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
 
     
