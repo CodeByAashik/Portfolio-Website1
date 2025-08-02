@@ -445,13 +445,13 @@ header ul a{
 .my-projects{
     display: flex;
     flex-direction: column;
-    gap: 10%;
+    gap: 20px;
     align-items: center;
     /* justify-content: space-around; */
     position:relative;
     width: 80%;
-    height: 100vh;
-    margin-bottom:770px;
+    /* height: 100vh; */
+    /* margin-bottom:770px; */
     margin-top:150px;
 
 
@@ -1337,7 +1337,7 @@ footer h1{
     
     .my-projects{
        margin-top: -49px;
-       margin-bottom: 410px;
+       /* margin-bottom: 410px; */
     }
     
     
@@ -1406,11 +1406,10 @@ footer h1{
 
     
     
-    
-
     .skills-section{
-        margin-top: 285px;
+        margin-top: 0px;
     }
+
 
     .skills-image{
         display: none;
