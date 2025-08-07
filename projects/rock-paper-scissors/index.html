@@ -4,8 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    <link rel="shortcut icon" href="../icon.png" type="image/x-icon">
-
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
         
@@ -24,7 +22,7 @@
         }
 
         body {
-            background: url('rpcbg.jpg');
+            background: url('../rpcbg.jpg');
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -273,10 +271,6 @@
                 loses:0,
                 ties:0
             };
-     
-        
-
-
 
         let result = '';
         let winsText = document.getElementById('Wins');
@@ -367,33 +361,32 @@
 
         
         function displayScores(playerMove,computerMove) {
-            if(computerMove === 'Rock'){
-                computerMove = '✊';
-            } else if(computerMove === 'Paper'){
-                computerMove = '✋';
-            } else if(computerMove === 'Scissors'){
-                computerMove = '✌️';
-            }
+            if(score.wins === 0 && score.loses === 0 && score.ties === 0){
+                resultText.innerHTML = 'Click a button to play!';
+            }else if(playerMove && computerMove){
+                if(computerMove === 'Rock'){
+                    computerMove = '✊';
+                } else if(computerMove === 'Paper'){
+                    computerMove = '✋';
+                } else if(computerMove === 'Scissors'){
+                    computerMove = '✌️';
+                }
 
-            if(playerMove === 'Rock'){
-                playerMove = '✊';
-            } else if(playerMove === 'Paper'){
-                playerMove = '✋';
-            } else if(playerMove === 'Scissors'){
-                playerMove = '✌️';
+                if(playerMove === 'Rock'){
+                    playerMove = '✊';
+                } else if(playerMove === 'Paper'){
+                    playerMove = '✋';
+                } else if(playerMove === 'Scissors'){
+                    playerMove = '✌️';
+                }
+                 resultText.innerHTML = `You <span> ${playerMove}</span> / <span> ${computerMove}</span> Computer ${result}`;
             }
-            if(score.wins === 0 && score.loses === 0 && score.ties === 0) {
-                resultText.textContent = 'Scores have been reset!';
-                winsText.textContent = '0';
-                losesText.textContent = '0';     
-                tiesText.textContent = '0';  
-            }else{
-                resultText.innerHTML = `You <span> ${playerMove}</span> / <span> ${computerMove}</span> Computer ${result}`;
-                winsText.textContent = score.wins;
-                losesText.textContent = score.loses;     
-                tiesText.textContent = score.ties;   
-            }
+                winsText.innerHTML = score.wins;
+                losesText.innerHTML = score.loses;
+                tiesText.innerHTML = score.ties;
         } 
+
+        
 
         let intervalID;
         let isAutoPlaying = false;
@@ -409,6 +402,8 @@
                 isAutoPlaying = false;
             }
         }
+
+        displayScores();
         
     </script>
 </body>
