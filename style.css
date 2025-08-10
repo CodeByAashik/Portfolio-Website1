@@ -1245,38 +1245,49 @@ footer h1{
     }
     
     .hero{
-        flex-direction: column;
-        top:101px;
+        flex-direction: column-reverse;
+        /* top:101px; */
         bottom: 0;
         left: 0;
         right:0;
         height: 100vh;
-        justify-content: space-around;
+        /* justify-content: space-around; */
+        gap: 30px;
+        margin: 90px 0  0 25px;
+        /* justify-content: normal; */
     }
     
     .scroll-down{
-        bottom:25%;
+        top: 92%;
     }
 
     
 
     .hero-vid-box{
-            height:200px;
+            height:250px;
             width: 100vw;
-            top: 60px;
-            margin-bottom: 10vh;
-            display: inline-block;
+            /* top: 60px; */
+            /* margin-bottom: 10vh; */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: -25px;
+            position: static;
         }
         
         .hero-vid-box img{
-            position: relative;
+            /* position: relative; */
             height:250px;
             width:250px;
             /* top:20px; */
-            left: 50%;
-            transform: translate(-50%,-50%);
+            /* left: 50%; */
+            /* transform: translate(-50%,-50%); */
         box-shadow: 0 0 10px lightgray , 0 0 10px navy;
         align-self: flex-start;
+    }
+
+    .hero-info{
+        position :static;
     }
 
     .section-title{
@@ -1287,7 +1298,7 @@ footer h1{
     
 
     .info-section{
-        margin-top:-160px;
+        margin-top:-50px;
     }
 
     
@@ -1338,6 +1349,7 @@ footer h1{
     .my-projects{
        margin-top: -49px;
        /* margin-bottom: 410px; */
+       gap: 40px;
     }
     
     
@@ -1351,9 +1363,11 @@ footer h1{
         width: 90%;
         height:100%;
         margin-left:3.5%;
+        gap: 7px;
     }
 
     .project-info h1{
+        margin: 15px 0 0 0 ;
         font-size: 20px;
         max-width: 300px; 
        text-wrap: wrap;
@@ -1362,18 +1376,19 @@ footer h1{
     
     .project-info p{
         width: 100%;
-        margin-top: -12px;
         font-size: 12px;
         text-wrap: wrap;
         max-width: 300px;
         min-width: 0;
         text-align: center;
+        margin-bottom: 0px;
     }
-
-    .project-info button{
+    
+    .project-info a , .project-info button{
         padding: 5px 10px;
         text-align: center;
-        margin-top: -24px;
+        /* margin-top: -24px; */
+        position:static;
     }
 
 
@@ -1387,7 +1402,6 @@ footer h1{
         flex-direction: column;
         align-items: center;
         margin-left: 1%;
-        margin-top: -17px;
         /* gap: 30px; */
     }
     
@@ -1481,13 +1495,19 @@ footer h1{
 
     .social-description{
         margin-left:5%;
-            align-items: center;
+            /* align-items: center; */
+            gap: 10px;
             justify-content: center;
             flex-direction: column;
+            gap: 17px;
     }
 
-    .head-social{
-        margin-left:-34px;
+    .social-description p{
+        margin: 0;
+    }
+
+    .next-c{
+        gap: 30px;
     }
 
     footer h1{
@@ -1498,6 +1518,7 @@ footer h1{
        display: flex;
        align-items: center;
        justify-content: center;
+       margin: 0;
     }
 
 
