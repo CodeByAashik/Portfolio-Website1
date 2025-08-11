@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note app</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="../icon.png" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/cd6860e8dd.js" crossorigin="anonymous"></script>
+</head>
+<body class="body">
+    <div class="container">
+        <nav class="navbar">
+            <div class="left">
+                <h1 class="logo">Note <span class="logo-left">App</span></h1>
+            </div>
+            <div class="right">
+                <div class="add">
+                    <button class="add-note">+ Add Note</button>
+                </div>
+                <button class="theme"><i class="fa-solid fa-moon"></i></button>
+            </div>
+        </nav>
+
+        <section class="notes">
+            <div class="note-grid">
+                
+            </div>
+        </section>
+
+        <section class="modal no-modal ">
+            <div class="addnote-modal hide-modal ">
+                <div class="top">
+                    <h3 class="note-title">Add a note</h3>
+                    <button class="close-modal">&times;</button>
+                </div>
+                <input type="text" name="" id="title" placeholder="Enter Title">
+                <textarea name="" id="note-detail" placeholder="Describe your note" rows="4"></textarea>
+                <div class="buttons">
+                    <button class="cancel">Cancel</button>
+                    <button class="addnote-button">Add note</button>
+                </div>
+            </div>
+        </section>   
+    </div>
+<script src="app.js"></script>
+</body>
+</html>
