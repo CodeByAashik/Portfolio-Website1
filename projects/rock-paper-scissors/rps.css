@@ -1,0 +1,226 @@
+
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box; 
+        }
+
+        .container{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+            width: 100vw;
+        }
+
+        body {
+            background: url('./rpcbg.jpg');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Poppins', sans-serif;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        #gametitle {
+            font-size: 42px;
+            text-align: center;
+            font-weight: 700;
+            margin-top: 30px;
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            animation: fadeInDown 1s ease-out;
+            letter-spacing: 2px;
+            padding: 20px 90px;
+            border-radius: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 40px;
+            gap: 30px;
+            animation: fadeInUp 1s ease-out 0.3s both;
+        }
+
+        .rpc-buttons {
+            height: 130px;
+            width: 140px;
+            border: none;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            font-size: 3.6rem;
+            font-weight: 600;
+            color: #4a5568;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s;
+        }
+
+        .rpc-buttons:hover{
+            transform: translateY(-10px);
+        }
+
+        button {
+            padding: 12px 24px;
+            margin-top: 15px;
+            border-radius: 25px;
+            border: none;
+            background: linear-gradient(145deg, #667eea, #764ba2);
+            color: white;
+            font-weight: 500;
+            font-size: 14px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 0 15px rgba(102, 126, 234, 0.4);
+            margin: 0 10px;
+        }
+
+        .result {
+            display: flex;
+            width: 100vw;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin-top: 40px;
+            animation: fadeInUp 1s ease-out 0.6s both;
+        }
+
+        .result #resultText {
+            font-size: 1.5;
+            color: white;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: 500;
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            padding: 20px 40px;
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            min-height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .result #resultText span {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .result #resultText:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .score-container {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .score-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px 30px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+            transition: all 0.3s ease;
+            min-width: 120px;
+        }
+        .result h3 {
+            font-size: 16px;
+            color: rgba(255, 255, 255, 0.8);
+            margin-bottom: 5px;
+            font-weight: 500;
+        }
+
+        .score-value {
+            font-size: 28px;
+            font-weight: 700;
+            color: white;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .extra-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .note{
+            font-size: 16px;
+            color: white;
+            text-align: center;
+            background-color: rgba(242, 11, 11, 0.484);
+            backdrop-filter: blur(10px);
+            padding: 10px 40px;
+            margin-top: 30px;
+        }
+
+        /* Responsive design */
+        @media (max-width: 480px) {
+    #gametitle {
+        font-size: 28px;
+        padding: 15px 30px;
+    }
+
+    .rpc-buttons {
+        /* height: 80px; */
+        /* width: 80px; */
+        font-size: 63px;
+    }
+
+    .result #resultText {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 20px 10px;
+        min-height: 50px;
+    }
+
+    .score-value {
+        font-size: 20px;
+    }
+
+    .score-item {
+        padding: 10px 15px;
+        min-width: 90px;
+    }
+
+    .extra-buttons button {
+        padding: 10px 20px;
+        font-size: 12px;
+    }
+
+    .note {
+        font-size: 14px;
+        padding: 8px 20px;
+        margin-top: 20px;
+    }
+
+    .buttons {
+        gap: 15px;
+        margin-top: 30px;
+    }
+
+    .score-container {
+        gap: 10px;
+    }
+}

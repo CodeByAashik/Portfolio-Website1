@@ -1,3 +1,8 @@
+//loader
+        window.onload = function() {
+            document.getElementById("loader").classList.add("hidden");
+        };
+
 const follower = document.querySelector('.cursor-follower');
 
     document.addEventListener('mousemove', (e) => {
