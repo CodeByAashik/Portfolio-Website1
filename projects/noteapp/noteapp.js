@@ -15,6 +15,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
     function renderNotes() {
         noteGrid.innerHTML = '';
+
+        if(noteArray.length === 0){
+            const noNotesElem = document.createElement('div');
+            noNotesElem.className = 'note-container no-notes';
+            noNotesElem.innerHTML = `
+                <h2>No notes available</h2>
+            `;
+            noteGrid.appendChild(noNotesElem);
+            return;
+        }
         noteArray.forEach((note, index) => {
             const noteElem = document.createElement('div');
             noteElem.className = 'note-container';

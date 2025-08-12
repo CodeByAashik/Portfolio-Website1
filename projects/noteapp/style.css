@@ -118,7 +118,7 @@ body {
     gap: 24px;
 }
 
-.navbar .right button {
+.navbar .right button , .add-note {
     padding: 12px 24px;
     border-radius: 30px;
     font-weight: 600;
@@ -146,7 +146,7 @@ body {
     left: 0;
 }
 
-.navbar .right .add .add-note {
+.navbar .right .add .add-note , .add-note {
     background: var(--gradient-brand);
     color: white;
     border: none;
@@ -188,6 +188,18 @@ body {
     position: relative;
     overflow: hidden;
     cursor: pointer;
+}
+
+
+.no-notes{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    color: var(--text-color);
 }
 
 
