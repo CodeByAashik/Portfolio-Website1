@@ -344,7 +344,7 @@
         </section>
 
         <footer>
-            <h1>©2025 Aashik Thakur. All Rights Reserved</h1>
+            <h1>©<span class="year">2025</span> Aashik Thakur. All Rights Reserved</h1>
         </footer>
 
         <!-- loader div  -->
@@ -383,12 +383,12 @@
                 alert("Scroll is disabled on small screens.");
             }
         });
-
-        
-
-
     </script>
-
+    <script>
+        let date = new Date();
+        let year = date.getFullYear();
+        document.querySelector(".year").innerHTML = year;
+    </script>
 
 </body>
 
